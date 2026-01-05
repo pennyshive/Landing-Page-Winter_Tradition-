@@ -1,0 +1,28 @@
+body {
+  background-color: blue;
+}
+
+h1 {
+  color: blue;
+}
+.grid {
+  display: grid;
+}
+.box1 {
+  background-color: aqua;
+  width: 800px;
+  border: 5px solid white;
+  margin: 30px;
+}
+.box2 {
+  background-color: aquamarine;
+  width: 800px;
+  border: 5px solid white;
+  margin: 30px;
+}
+.box3 {
+  background-color: bisque;
+  width: 800px;
+  border: 5px solid white;
+  margin: 30px;
+}
