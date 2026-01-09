@@ -3,6 +3,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.5;
+  font-family: monospace;
 }
 
 h1 {
@@ -10,9 +11,12 @@ h1 {
   text-align: center;
   font-weight: 1000;
   font-size: 58px;
-  background-color: rgb(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.8);
   width: 800px;
   border-radius: 50px;
+  box-shadow: 1px 1px 20px white;
+  margin-top: 1px;
+  padding-top: 1px;
 }
 .winter-head {
   display: flex;
@@ -21,6 +25,10 @@ h1 {
 }
 a {
   color: #5c9ac2;
+}
+small {
+  display: block;
+  color: white;
 }
 .code-credit {
   text-align: center;
@@ -36,24 +44,29 @@ a {
 }
 .purple-box1 {
   background-color: rgb(0, 0, 0, 0.8);
+  line-height: 30px;
   width: 500px;
   border: 10px solid rgb(70, 66, 91, 0.3);
   border-radius: 5px;
   margin: 30px;
   height: 200px;
   color: white;
-  box-shadow: rgb(0, 0, 0) 5px 5px 5px 5px;
-  transition: 200ms;
+  box-shadow: 1px 1px 20px white;
+  text-align: center;
+  transition: 500ms;
 }
 .red-box2 {
   background-color: rgb(0, 0, 0, 0.8);
+  line-height: 30px;
   width: 500px;
   border-radius: 5px;
   border: 10px solid rgb(70, 66, 91, 0.3);
   margin: 30px;
   height: 200px;
   color: white;
-  box-shadow: rgb(0, 0, 0) 5px 5px 5px 5px;
+  box-shadow: 1px 1px 20px white;
+  text-align: center;
+  transition: 500ms;
 }
 .blue-box3 {
   background-color: rgb(0, 0, 0, 0.8);
@@ -63,24 +76,65 @@ a {
   margin: 30px;
   height: 200px;
   color: white;
-  box-shadow: rgb(0, 0, 0) 5px 5px 5px 5px;
+  box-shadow: 1px 1px 20px white;
+  text-align: center;
+  line-height: 30px;
+  transition: 500ms;
 }
 .purple-box1:hover {
-  background-color: #5c9ac2;
-  border: none;
+  background-color: rgb(92, 154, 194);
+
   border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.5) 5px 5px 5px 5px;
+  box-shadow: 1px 1px 20px white;
+  padding: 2px;
 }
 .red-box2:hover {
   background-color: #5c9ac2;
 
-  border: none;
   border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.5) 5px 5px 5px 5px;
+  box-shadow: 1px 1px 20px white;
 }
 .blue-box3:hover {
   background-color: #5c9ac2;
-  border: none;
+
   border-radius: 10px;
-  box-shadow: rgb(0, 0, 0) 5px 5px 5px 5px;
+  box-shadow: 1px 1px 20px white;
+}
+.grid {
+  display: grid;
+}
+.form-container {
+  display: flex;
+  justify-content: end;
+  margin: 50px auto;
+}
+#form-input {
+  width: 600px;
+  padding: 15px;
+  font-size: 16px;
+  border-radius: 15px;
+  box-shadow: 1px 1px 20px white;
+  border: none;
+  text-align: center;
+  transition: 900ms;
+  opacity: 0.8;
+}
+#form-input:hover {
+  background-color: rgb(0, 0, 0, 0.3);
+  color: white;
+}
+
+#form-submit {
+  width: 250px;
+  padding: 15px;
+  font-size: 16px;
+  border-radius: 15px;
+  box-shadow: 1px 1px 20px white;
+  border: none;
+  transition: 900ms;
+  opacity: 0.8;
+}
+#form-submit:hover {
+  background-color: rgb(0, 0, 0, 0.3);
+  color: white;
 }
