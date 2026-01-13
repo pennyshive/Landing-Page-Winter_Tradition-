@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.13.2/dist/axios.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,16 +15,30 @@
   </head>
   <body>
     <div class="winter-head">
-      <h1 class="great-vibes-regular">❄️Winter Tradition!❄️</h1>
+      <h1 class="great-vibes-regular" id="winter-head">
+        ❄️Winter Tradition!❄️
+      </h1>
     </div>
+    <div class="form-container">
+      <form id="search-from">
+        <input
+          type="text"
+          placeholder="What's your favourite winter tradition?"
+          id="form-input"
+        />
+        <input type="submit" value="Enter" id="form-submit" />
+        <small>i.e lighting candles, baking cookies, snowy walks...</small>
+      </form>
+    </div>
+    <div id="ai-container"></div>
 
     <div class="grid">
       <div class="purple-box1">
         The name <em>bonfire</em> comes from the Middle English word
-        <strong>bonefire</strong>, which literally means "a fire of bones". We
-        now celebrate around cozy bonfires at night by burning coal or wood to
-        have meaningful conversations, watch fireworks, have laughters that
-        echoe under the stars, play fun games, and have great food and drinks.
+        <em>bonefire</em>, which literally means "a fire of bones". We now
+        celebrate around cozy bonfires at night by burning coal or wood to have
+        meaningful conversations, watch fireworks, have laughters that echoe
+        under the stars, play fun games, and have great food and drinks.
       </div>
 
       <div class="red-box2">
@@ -45,17 +60,7 @@
         </ul>
       </div>
     </div>
-    <div class="form-container">
-      <form>
-        <input
-          type="text"
-          placeholder="What's your favourite winter tradition?"
-          id="form-input"
-        />
-        <input type="submit" value="Enter" id="form-submit" />
-        <small>i.e lighting candles, baking cookies, snowy walks...</small>
-      </form>
-    </div>
+
     <div class="code-credit">
       <footer>
         This project was coded with ❤️ by
