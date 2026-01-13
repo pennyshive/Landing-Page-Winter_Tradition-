@@ -9,8 +9,8 @@ function submitForm(event) {
   let formInput = document.querySelector("#form-input");
   let h1Element = document.querySelector("#winter-head");
   let aiContainer = document.querySelector("#ai-container");
-  h1Element.innerHTML = `<strong>☃️'${formInput.value}' is an awesome winter tradition!</strong>☃️`;
-  aiContainer.innerHTML = `⌛Generating fun jokes about ${formInput.value}☃️`;
+  h1Element.innerHTML = `☃️<span>'${formInput.value}' is an Awesome Winter Tradition!</span>☃️`;
+  aiContainer.innerHTML = `<div class="generating">⌛Generating fun jokes about ${formInput.value}⏳</div>`;
 
   let apiKey = "04be30ebbbe0f71eoaba8f379747a4t7";
   let prompt = `Please display 20 fun jokes with emojis about ${formInput.value} in html format. Do not show any html elements and their symbols. Have a heading stating "😹Let's laugh together😹" with 5px text-shadow in orange. Keep the answers short.`;

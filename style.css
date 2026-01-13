@@ -19,10 +19,9 @@ h1 {
   margin-top: 1px;
   padding-top: 1px;
 }
-strong {
-  color: blue;
-  text-shadow: whitesmoke 1px 0 10px;
-  max-width: 100%;
+span {
+  color: white;
+  text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
 }
 em {
   color: blue;
@@ -159,4 +158,15 @@ small {
   margin-right: 15px;
   margin-top: 100px;
   max-height: 70%;
+}
+.generating {
+  font-size: 30px;
+  height: 50px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  animation: blink-animation 1s steps(5, start) infinite;
+}
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
 }
